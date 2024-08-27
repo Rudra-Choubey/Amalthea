@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+    overflow-x: hidden; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background: #010221;
+    width: 100%;
+}
+
+.navbar {
+    min-height: 10vh;
+    background: #0A7373;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.navbar h3 {
+    color: white;
+    font-family: "Orbitron";
+    margin: 0;
+    margin-right: auto; 
+}
+
+.main-div .header {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.clock {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.clock h1 {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 770px) {
+    .main-div .header {
+        font-size: 3rem;
+    }
+
+    .clock h1 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .main-div .header {
+        font-size: 2rem;
+    }
+
+    .clock h1 {
+        font-size: 1rem;
+        padding: 3px;
+    }
+}
