@@ -15,6 +15,7 @@ body {
     padding: 10px;
     background: #010221;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -26,6 +27,7 @@ body {
     justify-content: flex-start; 
     flex-wrap: wrap;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar a {
